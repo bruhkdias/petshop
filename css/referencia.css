@@ -1,0 +1,32 @@
+#Camada_1 {
+  fill:none;
+  stroke:#000;
+  stroke-width: 1px;
+  stroke-dasharray: 1000; 
+  animation: 5s cls-1; 
+  animation-iteration-count: infinite;
+  width: 500px;
+  margin-left:30%;
+}
+
+
+
+/* cls-1 é o nome da nossa animação*/
+@keyframes cls-1 {
+  0% {
+    stroke-dashoffset: 1000; 
+  }
+ 30%{
+    fill: rgba(0, 0, 0, 0.01);
+  }
+  50%{
+    fill: rgba(0, 0, 0, 0.2);
+  }
+  75%{
+    fill: rgba(0, 0, 0, 0.3);
+  }
+  100%{
+    fill: rgba(0, 0, 0, 1);
+  }
+}
+
